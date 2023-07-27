@@ -1,0 +1,5 @@
+bazel-bin
+bazel-bzl-asm-cross-package-include-mre
+bazel-out
+bazel-testlogs
+bzl-asm-cross-package-include-mre

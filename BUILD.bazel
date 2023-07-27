@@ -1,0 +1,19 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+# gazelle:prefix github.com/example/bzl-asm-cross-package-include-mre
+gazelle(name = "gazelle")
+
+go_binary(
+    name = "main",
+    embed = [":bzl-asm-cross-package-include-mre_lib"],
+    visibility = ["//visibility:public"],
+)
+
+go_library(
+    name = "bzl-asm-cross-package-include-mre_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/example/bzl-asm-cross-package-include-mre",
+    visibility = ["//visibility:private"],
+    deps = ["@com_github_ebitengine_purego//:go_default_library"],
+)
