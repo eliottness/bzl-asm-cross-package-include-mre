@@ -24,11 +24,11 @@ load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_depe
 load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies", "go_repository")
 
 go_repository(
-    name = "com_github_ebitengine_purego",
+    name = "com_github_eliottness_purego",
     build_file_proto_mode = "disable",
-    importpath = "github.com/ebitengine/purego",
-    sum = "h1:v8f0ADMg0RBM0+5rb8qCFj/XlPkjo+xkyCLuUpBnj9s=",
-    version = "v0.4.0-alpha.4.0.20230519103000-ee8dcecc618f",
+    importpath = "github.com/eliottness/purego",
+    sum = "h1:cA6KoMbCexbja+gX3nzqixk3vGUqVpi+s9+NjsWlHu8=",
+    version = "v0.5.3-alpha",
 )
 
 

@@ -15,5 +15,5 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/example/bzl-asm-cross-package-include-mre",
     visibility = ["//visibility:private"],
-    deps = ["@com_github_ebitengine_purego//:go_default_library"],
+    deps = ["@com_github_eliottness_purego//:purego"],
 )
